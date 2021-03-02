@@ -1,5 +1,6 @@
 {
     "id": "named-entity-recognition",
-    "pretrained_model_id": "tagging-elmo-crf-tagger",
+    "archive_file": "~/archive/ner.tar.gz",
+    "predictor_name": "sentence_tagger",
     "attackers": ["input_reduction"]
 }

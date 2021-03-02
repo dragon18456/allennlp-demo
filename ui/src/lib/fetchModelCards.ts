@@ -37,6 +37,9 @@ export function getModelCardId(info: ModelInfo): string {
         case ModelId.ELMOSNLI: {
             return 'pair-classification-decomposable-attention-elmo';
         }
+	case ModelId.ELMONER: {
+	    return 'tagging-elmo-crf-tagger';
+	}
         default: {
             throw new NoModelCardIdError(info);
         }

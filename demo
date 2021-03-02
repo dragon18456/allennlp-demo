@@ -413,6 +413,7 @@ class APIEndpoint(Container):
         """
         custom = self.path / "Dockerfile"
         if custom.exists() and custom.is_file():
+            print(custom)
             return custom
         return paths.api / "Dockerfile"
 
@@ -438,6 +439,7 @@ class APIEndpoint(Container):
                 --volume {home / ".allennlp"}:/root/.allennlp
                 --volume {home / ".cache/huggingface"}:/root/.cache/huggingface
                 --volume {home / "nltk_data"}:/root/nltk_data
+                --volume {home / "archive"}:/root/archive
                 {self.tag}
         """
 

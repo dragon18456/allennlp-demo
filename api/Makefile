@@ -38,6 +38,7 @@ typecheck :
 		-v $$HOME/.allennlp:/root/.allennlp \
 		-v $$HOME/.cache/huggingface:/root/.cache/huggingface \
 		-v $$HOME/nltk_data:/root/nltk_data \
+		-v $$HOME/archive:/root/archive \
 		$(DOCKER_BASE_NAME)-$*:$(DOCKER_TAG)
 
 %-test : %-build
