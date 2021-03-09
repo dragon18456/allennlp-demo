@@ -4,7 +4,7 @@ import { ModelId } from '../../lib';
 
 export const config: DemoConfig = {
     group: 'Annotate a sentence',
-    title: 'Named Entity Recognition',
+    title: 'Negation',
     order: 1,
     modelIds: [ModelId.ELMONER, ModelId.FineGrainedNER],
     status: 'active',
